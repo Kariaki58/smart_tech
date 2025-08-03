@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Laptop } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const navLinks = [
   { href: '#', label: 'Home' },
@@ -38,7 +39,10 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex">
-            <Link href="#products">Browse Laptops</Link>
+            <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="mr-2 h-5 w-5" />
+              Browse Laptops
+            </Link>
           </Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
@@ -66,7 +70,10 @@ export function Header() {
                   ))}
                 </nav>
                 <Button asChild className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-                  <Link href="#products" onClick={() => setIsMenuOpen(false)}>Browse Laptops</Link>
+                  <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                    <FaWhatsapp className="mr-2 h-5 w-5" />
+                    Browse Laptops
+                  </Link>
                 </Button>
               </div>
             </SheetContent>

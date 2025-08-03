@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export function CallToAction() {
   return (
@@ -9,7 +10,10 @@ export function CallToAction() {
           Ready to find your perfect laptop?
         </h2>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transform hover:scale-105 transition-transform">
-          <Link href="#products">Explore Our Collection</Link>
+          <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="mr-2 h-6 w-6" />
+            Contact on WhatsApp to buy
+          </Link>
         </Button>
       </div>
     </section>

@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Linkedin, Laptop } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const socialLinks = [
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Instagram, href: '#', label: 'Instagram' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: FaWhatsapp, href: 'https://wa.me/1234567890', label: 'WhatsApp' },
 ];
 
 const quickLinks = [
@@ -50,7 +52,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-primary">Follow Us</h4>
             <div className="flex space-x-4">
               {socialLinks.map(link => (
-                <Link key={link.label} href={link.href} aria-label={link.label} className="text-muted-foreground hover:text-primary transition-colors">
+                <Link key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label} className="text-muted-foreground hover:text-primary transition-colors">
                   <link.icon className="h-6 w-6" />
                 </Link>
               ))}

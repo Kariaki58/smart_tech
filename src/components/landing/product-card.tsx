@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
+import { FaWhatsapp } from 'react-icons/fa';
 
 type ProductCardProps = {
   name: string;
@@ -30,7 +32,12 @@ export function ProductCard({ name, price, features, imageSrc, dataAiHint }: Pro
         <p className="text-sm text-muted-foreground">{features}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full bg-primary hover:bg-primary/90">View Details</Button>
+        <Button asChild className="w-full bg-primary hover:bg-primary/90">
+          <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="mr-2 h-5 w-5" />
+            Buy on WhatsApp
+          </Link>
+        </Button>
       </CardFooter>
     </Card>
   );
