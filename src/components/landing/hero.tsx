@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section className="relative h-[calc(100vh-theme(spacing.14))] min-h-[500px] w-full flex items-center justify-center">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="/img-3.jpeg"
         alt="Modern laptop on a desk"
         fill
         className="object-cover"
@@ -23,7 +23,7 @@ export function Hero() {
           Explore top brands, unbeatable prices, and expert support.
         </p>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transform hover:scale-105 transition-transform animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+          <Link href="https://wa.me/+2347074212990" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="mr-2 h-5 w-5" />
             Shop Now
           </Link>

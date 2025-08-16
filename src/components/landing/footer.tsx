@@ -3,11 +3,11 @@ import { Facebook, Twitter, Instagram, Linkedin, Laptop } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: FaWhatsapp, href: 'https://wa.me/1234567890', label: 'WhatsApp' },
+  { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100083416923185', label: 'Facebook' },
+  // { icon: Twitter, href: '#', label: 'Twitter' },
+  { icon: Instagram, href: 'https://www.instagram.com/smarttechnology973?igsh=YzljYTk1ODg3Zg==', label: 'Instagram' },
+  // { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: FaWhatsapp, href: 'https://wa.me/+2347074212990', label: 'WhatsApp' },
 ];
 
 const quickLinks = [
@@ -33,9 +33,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-primary">Contact Us</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="mailto:support@smarttech.com" className="hover:text-primary transition-colors">support@smarttech.com</a></li>
-              <li><a href="tel:+1234567890" className="hover:text-primary transition-colors">+1 (234) 567-890</a></li>
-              <li className="text-muted-foreground">123 Tech Avenue, Silicon Valley, CA 94000</li>
+              <li><a href="mailto:technologysmart05@gmail.com" className="hover:text-primary transition-colors">technologysmart05@gmail.com</a></li>
+              <li><a href="tel:++2347074212990" className="hover:text-primary transition-colors">+2347074212990</a></li>
+              <li className="text-muted-foreground">Garrison Port Harcourt Rivers State</li>
             </ul>
           </div>
           <div>

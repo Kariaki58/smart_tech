@@ -3,23 +3,23 @@ import { ProductCard } from './product-card';
 const products = [
   {
     name: 'ProBook X360',
-    price: '$1,299',
+    // price: '$1,299',
     features: 'Intel i7 | 16GB RAM | 512GB SSD',
-    imageSrc: 'https://placehold.co/600x400.png',
+    imageSrc: '/img-1.jpeg',
     dataAiHint: 'laptop sleek'
   },
   {
     name: 'Zenith 15',
-    price: '$999',
+    // price: '$999',
     features: 'AMD Ryzen 5 | 8GB RAM | 256GB SSD',
-    imageSrc: 'https://placehold.co/600x400.png',
+    imageSrc: '/img-2.jpeg',
     dataAiHint: 'laptop professional'
   },
   {
     name: 'AirLite 13',
-    price: '$1,499',
+    // price: '$1,499',
     features: 'Apple M2 | 16GB RAM | 512GB SSD',
-    imageSrc: 'https://placehold.co/600x400.png',
+    imageSrc: '/img-5.jpeg',
     dataAiHint: 'laptop minimalist'
   },
 ];

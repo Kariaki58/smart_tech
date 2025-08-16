@@ -39,7 +39,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex">
-            <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <Link href="https://wa.me/+2347074212990" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="mr-2 h-5 w-5" />
               Browse Laptops
             </Link>
@@ -70,7 +70,7 @@ export function Header() {
                   ))}
                 </nav>
                 <Button asChild className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-                  <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                  <Link href="https://wa.me/+2347074212990" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                     <FaWhatsapp className="mr-2 h-5 w-5" />
                     Browse Laptops
                   </Link>
